@@ -1,0 +1,2 @@
+import type { Track } from '../../../types/content'; import { airspaceLesson } from './lessons/airspace'; import { questions } from './questions/sample';
+export const part107: Track = {id:'part-107',title:'FAA Part 107 Remote Pilot',shortTitle:'Part 107',description:'Build the knowledge needed for safe small UAS operations and the FAA knowledge test.',status:'available',lessons:[airspaceLesson],questions};

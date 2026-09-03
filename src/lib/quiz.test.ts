@@ -1,0 +1,2 @@
+import { describe,expect,it } from 'vitest'; import { scoreQuiz,selectExamQuestions } from './quiz'; import { questions } from '../content/tracks/part-107/questions/sample';
+describe('quiz engine',()=>{it('scores answers',()=>expect(scoreQuiz(questions,{[questions[0].id]:questions[0].correctChoiceId,[questions[1].id]:'wrong'})).toEqual({correct:1,total:2,percent:50}));it('limits generated exams',()=>expect(selectExamQuestions(questions,1,()=>0.5)).toHaveLength(1));});

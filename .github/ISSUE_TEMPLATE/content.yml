@@ -1,0 +1,21 @@
+name: Learning content
+description: Propose or improve a lesson or question
+title: "content: "
+labels: [content]
+body:
+  - type: dropdown
+    id: milestone
+    attributes: {label: Target release, options: [v0.1, v0.2, v0.3, v0.5, v0.7, v1.0]}
+    validations: {required: true}
+  - type: input
+    id: objective
+    attributes: {label: Learning objective}
+    validations: {required: true}
+  - type: textarea
+    id: change
+    attributes: {label: Proposed content}
+    validations: {required: true}
+  - type: textarea
+    id: sources
+    attributes: {label: Primary sources}
+    validations: {required: true}

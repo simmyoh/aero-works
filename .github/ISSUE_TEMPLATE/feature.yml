@@ -1,0 +1,17 @@
+name: Platform feature
+description: Propose a learner or contributor capability
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: milestone
+    attributes: {label: Target release, options: [v0.1, v0.2, v0.3, v0.5, v0.7, v1.0]}
+    validations: {required: true}
+  - type: textarea
+    id: outcome
+    attributes: {label: Learner outcome, description: Describe the need and observable result.}
+    validations: {required: true}
+  - type: textarea
+    id: acceptance
+    attributes: {label: Acceptance criteria}
+    validations: {required: true}
