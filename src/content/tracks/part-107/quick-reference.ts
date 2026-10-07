@@ -31,4 +31,15 @@ export const quickReference: QuickReferenceGroup[] = [
     {label:'Property threshold',value:'More than $500',note:'Use repair cost or fair-market value if the property is a total loss.'},
     {label:'Alcohol',value:'8 hours · under 0.04% · no impairment',note:'All applicable conditions must be met; medication and fatigue can also make a crewmember unfit.'},
   ]},
+  {title:'Airport communications',references:[ref.acs,ref.phak],items:[
+    {label:'ATIS',value:'Recorded airport information',note:'Weather, runway use, and operational notices; listen for the current information code.'},
+    {label:'CTAF',value:'Traffic-advisory frequency',note:'Monitor traffic and self-announcements at non-towered airports or when a tower is closed.'},
+    {label:'UNICOM',value:'Nongovernment advisory service',note:'May provide airport information but is not ATC and cannot authorize Part 107 airspace access.'},
+    {label:'Marking colors',value:'Runway white · taxiway yellow',note:'Red signs with white characters indicate mandatory instructions or holding positions.'},
+  ]},
+  {title:'Less-obvious hazards',references:[ref.acs,ref.phak],items:[
+    {label:'Wires',value:'Thin, low-contrast, and poorly sensed',note:'Survey from several angles and use a conservative stand-off distance.'},
+    {label:'Thermal plumes',value:'Turbulence and vertical currents',note:'Smoke stacks, cooling towers, fires, and strong surface heating can create unsafe air.'},
+    {label:'Wildlife',value:'Avoid flocks and never chase',note:'Bird concentration and unpredictable movement can make a site unsuitable.'},
+  ]},
 ];
