@@ -1,0 +1,8 @@
+.sources{padding:96px 0;border-bottom:1px solid var(--line)}
+.source-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:42px}
+.source-grid article{background:#0b171c;padding:26px}
+.source-grid small{color:var(--orange);font:700 .7rem ui-monospace;text-transform:uppercase;letter-spacing:.1em}
+.source-grid h3{margin:.7rem 0}
+.source-grid h3 a{text-decoration-thickness:1px;text-underline-offset:4px}
+.source-grid p{color:var(--muted);line-height:1.6;margin-bottom:0}
+@media(max-width:760px){.sources{padding:64px 0}.source-grid{grid-template-columns:1fr}}
