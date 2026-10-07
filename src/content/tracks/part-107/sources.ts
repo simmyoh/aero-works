@@ -11,6 +11,8 @@ export const part107Sources: Part107Source[] = [
   {id:'part-89',title:'14 CFR Part 89 - Remote Identification',kind:'Linked FAA resource',detail:'Remote Identification rules listed by the supplied resources PDF.',url:'https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-89'},
   {id:'policy-library',title:'FAA UAS Policy Library',kind:'Linked FAA resource',detail:'FAA notices, policy, guidance, TFR, and NOTAM resources.',url:'https://www.faa.gov/uas/resources/policy_library/'},
   {id:'testing',title:'FAA Airman Testing',kind:'Linked FAA resource',detail:'Testing standards and reference handbooks identified in the supplied resources PDF.',url:'https://www.faa.gov/training_testing/testing/'},
+  {id:'acs',title:'Remote Pilot - Small UAS Airman Certification Standards (FAA-S-ACS-10B)',kind:'Linked FAA resource',detail:'The FAA blueprint that identifies the knowledge and risk-management elements evaluated on the UAG knowledge test.',url:'https://www.faa.gov/training_testing/testing/acs'},
+  {id:'study-guide',title:'Remote Pilot - Small UAS Study Guide (FAA-G-8082-22)',kind:'Linked FAA resource',detail:'FAA study material arranged around the Part 107 knowledge areas and listed by the supplied resources file.',url:'https://www.faa.gov/regulations_policies/handbooks_manuals/aviation'},
 ];
 
 export const sourceRefs = {
@@ -25,4 +27,6 @@ export const sourceRefs = {
   ac:'Resources_UAS-Recurrent-Non61.pdf - AC 107-2',
   review:'Review - Learning Center Courses Content - FAA - FAASTeam - FAASafety.gov.pdf',
   glossary:'Glossary - Learning Center Courses Content - FAA - FAASTeam - FAASafety.gov.pdf',
+  acs:'Resources_UAS-Recurrent-Non61.pdf - FAA Airman Certification Standards (FAA-S-ACS-10B)',
+  studyGuide:'Resources_UAS-Recurrent-Non61.pdf - Remote Pilot Small UAS Study Guide (FAA-G-8082-22)',
 };
