@@ -1,6 +1,6 @@
 # Aero Works
 
-A modular aerospace learning platform for flight test engineering, aerospace engineering, UAS, and pilot training. FAA Part 107 is the first learning track, with eight study briefings and a 60-question randomized practice bank.
+A modular aerospace learning platform for flight test engineering, aerospace engineering, UAS, and pilot training. FAA Part 107 is the first learning track, with 12 exam-domain briefings and a 100-question randomized practice bank.
 
 ## Start locally
 
