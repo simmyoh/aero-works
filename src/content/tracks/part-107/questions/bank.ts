@@ -1,11 +1,7 @@
 import type { Difficulty, Question } from '../../../../types/content';
+import { sourceRefs as ref } from '../sources';
 
 type Seed = [string,string,string[],number,string,string[],Difficulty?];
-const ref = {
-  rules:'14 CFR Part 107', airspace:'14 CFR §§ 107.41 and 107.47', limits:'14 CFR § 107.51',
-  night:'14 CFR § 107.29', people:'14 CFR Part 107 Subpart D', rid:'14 CFR Part 89',
-  weather:'FAA Aviation Weather Handbook', phak:'FAA-H-8083-25C', ac:'FAA AC 107-2A',
-};
 const seeds: Seed[] = [
 ['001','Who is directly responsible for and the final authority over a Part 107 operation?',['The visual observer','The remote pilot in command','The aircraft owner','The person who hired the crew'],1,'The remote PIC has direct responsibility and final authority for the operation.',[ref.rules]],
 ['002','What is the minimum age to qualify for a remote pilot certificate with a small UAS rating?',['14','16','18','21'],1,'An applicant must be at least 16 years old.',[ref.rules]],
