@@ -19,7 +19,7 @@ Run `pnpm test`, `pnpm lint`, and `pnpm build` before opening a pull request.
 - `src/components/` renders reusable learning experiences.
 - `docs/roadmap/` describes release scope.
 
-To add a track, create a folder with lessons and questions matching the shared schema, export a `Track`, and register it in `src/content/index.ts`. Content should cite authoritative references and be reviewed for currency. Part 107 materials were last reviewed against FAA sources in October 2026. Aero Works is educational material, not regulatory or operational advice.
+To add a track, create a folder with lessons and questions matching the shared schema, export a `Track`, and register it in `src/content/index.ts`. Part 107 content follows the closed source policy in `docs/content-sources.md`: every lesson and question must trace to a supplied FAA course file or to a resource named in the supplied resources PDF. Aero Works is educational material, not regulatory or operational advice.
 
 ## Deployment
 
