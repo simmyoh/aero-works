@@ -1,6 +1,6 @@
 # Aero Works
 
-A modular aerospace learning platform for flight test engineering, aerospace engineering, UAS, and pilot training. FAA Part 107 is the first learning track.
+A modular aerospace learning platform for flight test engineering, aerospace engineering, UAS, and pilot training. FAA Part 107 is the first learning track, with eight study briefings and a 60-question randomized practice bank.
 
 ## Start locally
 
@@ -19,7 +19,7 @@ Run `pnpm test`, `pnpm lint`, and `pnpm build` before opening a pull request.
 - `src/components/` renders reusable learning experiences.
 - `docs/roadmap/` describes release scope.
 
-To add a track, create a folder with lessons and questions matching the shared schema, export a `Track`, and register it in `src/content/index.ts`. Content should cite authoritative references and be reviewed for currency. Aero Works is educational material, not regulatory or operational advice.
+To add a track, create a folder with lessons and questions matching the shared schema, export a `Track`, and register it in `src/content/index.ts`. Content should cite authoritative references and be reviewed for currency. Part 107 materials were last reviewed against FAA sources in October 2026. Aero Works is educational material, not regulatory or operational advice.
 
 ## Deployment
 
