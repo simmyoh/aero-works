@@ -1,0 +1,31 @@
+import { sourceRefs as ref } from './sources';
+
+export type Flashcard = { id:string; front:string; back:string; topic:string; references:string[] };
+
+export const flashcards: Flashcard[] = [
+  ['test-age','Minimum age to take the UAG knowledge test?','14. Certificate eligibility begins at age 16.','Certification',[ref.acs,ref.rules]],
+  ['recency','How long does Part 107 knowledge recency last?','Through the preceding 24 calendar months.','Certification',[ref.rules]],
+  ['rpic','Who has final authority for the operation?','The remote pilot in command.','Operations',[ref.rules]],
+  ['weight','What is the Part 107 small-aircraft weight boundary?','Less than 55 pounds at takeoff, including payload.','Regulations',[ref.rules]],
+  ['speed','Maximum groundspeed?','87 knots, or 100 mph.','Limits',[ref.limits]],
+  ['altitude','Normal maximum altitude?','400 feet AGL, subject to the structure exception.','Limits',[ref.limits]],
+  ['visibility','Minimum flight visibility?','3 statute miles from the control station.','Weather',[ref.limits]],
+  ['clouds','Required cloud clearance?','500 feet below and 2,000 feet horizontally.','Weather',[ref.limits]],
+  ['vlos','Can FPV replace visual line of sight?','No. It may assist, but the required unaided visual capability must be maintained.','Operations',[ref.rules]],
+  ['class-e','Which Class E requires prior Part 107 authorization?','Class E airspace designated for an airport beginning at the surface.','Airspace',[ref.airspace]],
+  ['ufm','Is a UAS Facility Map grid value authorization?','No. It is a planning value used during authorization review.','Airspace',[ref.airspace]],
+  ['magenta-vignette','What does shaded magenta usually show?','Class E beginning at 700 feet AGL on the faded side.','Charts',[ref.studyGuide]],
+  ['blue-vignette','What does shaded blue usually show?','Class E beginning at 1,200 feet AGL on the faded side.','Charts',[ref.studyGuide]],
+  ['metar','METAR versus TAF?','A METAR is an observation; a TAF is a terminal forecast.','Weather',[ref.weather]],
+  ['ceiling','Which cloud layers establish a ceiling?','The lowest broken, overcast, or obscured layer.','Weather',[ref.weather,ref.phak]],
+  ['density','What raises density altitude?','High temperature, high elevation, low pressure, and to a smaller degree high humidity.','Performance',[ref.phak]],
+  ['cg','Why does center of gravity matter?','An out-of-limit CG can reduce stability or exhaust control authority.','Performance',[ref.phak]],
+  ['night','What equipment is required for routine night flight?','Anti-collision lighting visible for at least 3 statute miles with a sufficient flash rate.','Night',[ref.night]],
+  ['rid','Three Remote ID compliance paths?','Standard Remote ID, a broadcast module, or compliant operation in a FRIA.','Remote ID',[ref.rid]],
+  ['category1','Core Category 1 aircraft criteria?','0.55 pound or less throughout the operation and no exposed rotating parts that can lacerate skin.','People',[ref.people]],
+  ['accident','When is a qualifying Part 107 accident reported?','Within 10 days.','Reporting',[ref.rules]],
+  ['property','Property-damage reporting threshold?','More than $500, excluding damage to the sUAS.','Reporting',[ref.rules]],
+  ['emergency','How far may the remote PIC deviate in an emergency?','Only to the extent necessary to respond to the in-flight emergency.','Emergencies',[ref.rules]],
+  ['hazmat','May a standard Part 107 operation carry hazardous material?','No.','Regulations',[ref.rules]],
+  ['right-of-way','Who has right of way over a small UAS?','Every crewed aircraft, airborne vehicle, and launch or reentry vehicle.','Operations',[ref.rules]],
+].map(([id,front,back,topic,references])=>({id,front,back,topic,references})) as Flashcard[];
