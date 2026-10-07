@@ -18,6 +18,5 @@ export default function App(){
     <Flashcards cards={flashcards}/>
     <div id="quiz"><Quiz questions={current.questions}/></div>
     <section id="sources" className="sources"><div className="section-heading"><div><span className="eyebrow">Closed source set</span><h2>What this guide uses</h2></div><span className="counter">Folder files + their links</span></div><div className="source-grid">{part107Sources.map(source=><article key={source.id}><small>{source.kind}</small><h3>{source.url?<a href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a>:source.title}</h3><p>{source.detail}</p></article>)}</div></section>
-    <section id="tracks" className="tracks"><div className="section-heading"><div><span className="eyebrow">Aero Works curriculum</span><h2>Future flight lines</h2></div></div><div className="track-grid">{tracks.map((track,i)=><article key={track.id} className={track.status==='available'?'active':''}><span>0{i+1}</span><h3>{track.shortTitle}</h3><p>{track.description}</p><small>{track.status==='available'?'Available now':'Planned'}</small></article>)}</div></section>
   </main><footer><span>AERO WORKS // BUILD KNOWLEDGE. FLY SMART.</span><span>Educational use only · Verify current FAA guidance</span></footer></>;
 }
