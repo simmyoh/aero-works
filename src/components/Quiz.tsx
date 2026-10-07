@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react';
 import type { Question } from '../types/content';
 import { scoreQuiz, selectExamQuestions } from '../lib/quiz';
 
-const sizes=[10,25,60,120];
 export function Quiz({questions}:{questions:Question[]}){
+  const sizes=[10,25,60,questions.length];
   const [size,setSize]=useState(10); const [seed,setSeed]=useState(0); const [index,setIndex]=useState(0);
   const [answers,setAnswers]=useState<Record<string,string>>({}); const [submitted,setSubmitted]=useState(false);
   const exam=useMemo(()=>{void seed;return selectExamQuestions(questions,Math.min(size,questions.length));},[questions,size,seed]);
