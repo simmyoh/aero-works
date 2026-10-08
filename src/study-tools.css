@@ -15,4 +15,5 @@
 .flashcard span{color:var(--muted);line-height:1.5}
 .flash-controls{display:flex;justify-content:space-between}
 .flash-controls button{margin-top:14px}
+.reveal-chip{margin-left:auto;border-color:#5a7480;color:#dce6ea}.answer-dot{background:#4ca4c5;color:#071014}
 @media(max-width:760px){.quick-reference,.flashcards{padding:64px 0}.reference-grid{grid-template-columns:1fr}.flashcard{padding:28px;min-height:300px}}
